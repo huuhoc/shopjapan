@@ -53,16 +53,6 @@
     		bottom: 0;
 		}
 	}
-
-	.list-product {
-		.item-list {
-			&:not(:last-child) {
-				margin-bottom: 10px;
-				padding-bottom: 10px;
-				border-bottom: 1px solid $border-color;
-			}
-		}
-	}
 }
 
 .block-categories {
