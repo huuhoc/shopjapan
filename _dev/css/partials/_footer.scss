@@ -1,0 +1,37 @@
+#footer {
+	border-top: 1px solid $border-color;
+	padding: 20px 0;
+	background: #fafafa;
+	color: #666;
+}
+.logo-footer {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.tagline {
+	font-size: 1.3rem;
+}
+.list-link-footer {
+	margin-bottom: 15px;
+	a {
+		color: #333;
+		text-decoration: none;
+		&:hover {
+			color: $color-default;
+		}
+	}
+	ul {
+		list-style: none;
+		overflow: hidden;
+		padding-left: 0;
+		margin-bottom: 0;
+		li {
+			float: left;
+			margin-right: 3rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+.copyright {
+	color: #666;
+}

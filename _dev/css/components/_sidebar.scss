@@ -1,0 +1,139 @@
+.sidebar {
+	.block {
+		margin-bottom: 30px;
+		.view-more {
+			text-align: right;
+			a {
+				text-decoration: none;
+				color: $color-text;
+				&:hover {
+					color: $color-default;
+				}
+			}
+			span {
+				font-size: 1.4rem;
+				margin-right: 5px;
+				vertical-align: middle;
+				position: relative;
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					left: 0;
+				}
+				&:before {
+					bottom: 0;
+					background: #e6ecf0;
+				}
+				&:after {
+					bottom: -2px;
+					background: #b0becc;
+				}
+			}
+			i {
+				color: $color-default;
+				font-size: 18px;
+				vertical-align: middle;
+			}
+		}
+	}
+	.title-block {
+		margin-bottom: 15px;
+		padding-bottom: 8px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 4px;
+			width: 100%;
+			background: #f3f7fa;
+			background: linear-gradient(-45deg,#fff 25%, #e6ecf0 25%, #e6ecf0 50%, #fff 50%, #fff 75%, #e6ecf0 75%, #e6ecf0);
+    		background-size: 4px 4px;
+    		bottom: 0;
+		}
+	}
+
+	.list-product {
+		.item-list {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid $border-color;
+			}
+		}
+	}
+}
+
+.block-categories {
+	a {
+		color: $color-text;
+		text-decoration: none;
+		display: block;
+		&:hover {
+			color: $color-default;
+		}
+	}
+	.block-content {
+		position: relative;
+		border: 1px solid #b0becc;
+		background: rgba(243,247,250,0.4);
+		&:before, &:after {
+			content: '';
+			background: #b0becc;
+			position: absolute;
+		}
+		&:before {
+			width: 1px;
+			height: 100%;
+			right: -6px;
+			top: 6px;
+		}
+		&:after {
+			width: 100%;
+			height: 1px;
+			bottom: -6px;
+			left: 6px;
+		}
+	}
+	ul {
+		margin-bottom: 0;
+		li {
+			font-size: 1.6rem;
+			padding: 12px 16px;
+			&:not(:last-child) {
+				border-bottom: 1px solid $border-color;
+			}
+		}
+	}
+}
+
+.block-tags {
+	ul {
+		font-size: 0;
+		li:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+	.tags {
+		margin-bottom: 0;
+		a {
+			color: $color-text;
+			text-decoration: none;
+			display: inline-block;
+			padding: 4px 15px;
+			border-radius: 20px;
+			border: 1px solid $color-default;
+			font-size: $font-size-body;
+			margin-bottom: 10px;
+			&:hover {
+				color: $color-text;
+				background: rgba($color-default, 0.2);
+			}
+			&:before {
+				content: '#';
+				margin-right: 3px;
+			}
+		}
+	}
+}

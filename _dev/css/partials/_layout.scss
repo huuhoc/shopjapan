@@ -1,0 +1,14 @@
+html {
+	font-size:62.5%;
+}
+
+body {
+	font-family: $font-family-default;
+	font-size: $font-size-body;
+}
+
+.container {
+	width: $page-width + $gutter-width;
+	padding-left: $gutter-width/2;
+	padding-right: $gutter-width/2;
+}

@@ -1,0 +1,40 @@
+.item-list {
+	.sidebar & {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+	.p-image {
+		max-width: 80px;
+		margin-right: 8px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.p-name {
+		font-size: 1.4rem;
+		a {
+			color: $color-link;
+			text-decoration: none;
+			&:hover {
+				color: $color-link-hover;
+			}
+		}
+	}
+	.p-price {
+		.money {
+			font-size: 16px;
+		}
+		.compare-price, .special-price {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.compare-price {
+			.money {
+				color: #888;
+				text-decoration: line-through;
+			}
+		}
+	}
+}

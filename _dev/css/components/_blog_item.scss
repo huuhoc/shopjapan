@@ -1,0 +1,25 @@
+.post-item-list {
+	.sidebar & {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+	.post-image {
+		max-width: 80px;
+		margin-right: 8px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.post-name {
+		font-size: 1.4rem;
+		a {
+			color: $color-link;
+			text-decoration: none;
+			&:hover {
+				color: $color-link-hover;
+			}
+		}
+	}
+}

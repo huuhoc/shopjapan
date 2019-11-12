@@ -1,0 +1,33 @@
+.list-social {
+	margin-bottom: 5px;
+	ul {
+		margin-bottom: 0;
+		font-size: 0;
+		li {
+			font-size: 3rem;
+			line-height: 1;
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+		a {
+			display: inline-block;
+			line-height: 1;
+		}
+	}
+	.facebook {
+		color: #4267b2;
+	}
+	.twitter {
+		color: #1da1f2;
+	}
+	.line {
+		color: #00b900;
+	}
+	.instagram {
+		color: #dd0045;
+	}
+	.youtube {
+		color: #f00;
+	}
+}
