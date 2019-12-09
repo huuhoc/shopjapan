@@ -3,9 +3,12 @@
 		margin-bottom: 30px;
 		.view-more {
 			text-align: right;
+			margin-top: 15px;
 			a {
 				text-decoration: none;
 				color: $color-text;
+				display: inline-block;
+				line-height: 1;
 				&:hover {
 					color: $color-default;
 				}
@@ -23,11 +26,11 @@
 					left: 0;
 				}
 				&:before {
-					bottom: 0;
+					bottom: -4px;
 					background: #e6ecf0;
 				}
 				&:after {
-					bottom: -2px;
+					bottom: -6px;
 					background: #b0becc;
 				}
 			}
@@ -42,6 +45,8 @@
 		margin-bottom: 15px;
 		padding-bottom: 8px;
 		position: relative;
+		font-weight: 700;
+		font-size: 1.8rem;
 		&:before {
 			content: '';
 			position: absolute;
@@ -56,6 +61,7 @@
 }
 
 .block-categories {
+	background: #fff;
 	a {
 		color: $color-text;
 		text-decoration: none;

@@ -12,3 +12,23 @@ body {
 	padding-left: $gutter-width/2;
 	padding-right: $gutter-width/2;
 }
+
+#content {
+	.title-block {
+		margin-bottom: 15px;
+		padding-bottom: 8px;
+		position: relative;
+		font-weight: 700;
+		font-size: 1.8rem;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 4px;
+			width: 100%;
+			background: #f3f7fa;
+			background: linear-gradient(-45deg,#fff 25%, #e6ecf0 25%, #e6ecf0 50%, #fff 50%, #fff 75%, #e6ecf0 75%, #e6ecf0);
+    		background-size: 4px 4px;
+    		bottom: 0;
+		}
+	}
+}

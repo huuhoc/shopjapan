@@ -1,6 +1,6 @@
 //Font
-$font-family-default: Georgia, sans-serif !default;
-$font-family-heading: Georgia, sans-serif !default;
+$font-family-default: 'Noto Serif', serif !default;
+$font-family-heading: 'Noto Serif', serif !default;
 
 $font-size-body: 1.4rem;
 
@@ -19,15 +19,21 @@ $color-text: #666;
 $color-link: #333;
 $color-link-hover: $color-default;
 
-
-
 //Menu
-
+$size-menu-link: 1.4rem;
+$color-menu-link: $color-link;
+$color-menu-link-hover: $color-default;
+	//Submenu
+	$size-submenu-link: 1.4rem;
+	$color-submenu-link: $color-link;
+	$color-submenu-link-hover: $color-default;
 
 //Header
-
+$color-header: $color-text;
 
 //Footer
-
+$color-footer: $color-text;
 
 //Product Item
+$product-title-color: #333;
+$product-title-color-hover: $color-link;

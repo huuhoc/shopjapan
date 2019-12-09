@@ -14,6 +14,7 @@
 	}
 	.post-name {
 		font-size: 1.4rem;
+		margin-top: -2px;
 		a {
 			color: $color-link;
 			text-decoration: none;
@@ -21,5 +22,13 @@
 				color: $color-link-hover;
 			}
 		}
+	}
+	.post-meta {
+		line-height: 1;
+	}
+	.date-created {
+		font-size: 12px;
+		color: $color-text;
+		line-height: 1;
 	}
 }

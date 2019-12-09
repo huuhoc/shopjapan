@@ -1,3 +1,15 @@
+.list-product {
+	.item-list {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	.item-grid {
+
+	}
+}
+
 .item-list {
 	.sidebar & {
 		&:not(:last-child) {
@@ -10,10 +22,35 @@
 		max-width: 80px;
 		margin-right: 8px;
 		border-radius: 5px;
+		position: relative;
 		overflow: hidden;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -75%;
+			z-index: 2;
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+			background: linear-gradient(to right,
+			rgba(255,255,255,0) 0%,
+			rgba(255,255,255,.3) 100%);
+			-webkit-transform: skewX(-25deg);
+			transform: skewX(-25deg);
+		}
+		&:hover {
+			&:before {
+				-webkit-animation: shine .75s;
+				animation: shine .75s;
+			}
+		}
 	}
 	.p-name {
 		font-size: 1.4rem;
+		margin-top: -2px;
+		margin-bottom: 10px;
 		a {
 			color: $color-link;
 			text-decoration: none;
@@ -23,6 +60,7 @@
 		}
 	}
 	.p-price {
+		line-height: 1;
 		.money {
 			font-size: 16px;
 		}
@@ -36,5 +74,78 @@
 				text-decoration: line-through;
 			}
 		}
+	}
+}
+
+.item-grid {
+	margin-bottom: 20px;
+	.group-image {
+		margin-bottom: 5px;
+	}
+	.p-image {
+		display: inline-block;
+		border-radius: 5px;
+		position: relative;
+		overflow: hidden;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -75%;
+			z-index: 2;
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+			background: linear-gradient(to right,
+			rgba(255,255,255,0) 0%,
+			rgba(255,255,255,.3) 100%);
+			-webkit-transform: skewX(-25deg);
+			transform: skewX(-25deg);
+		}
+		&:hover {
+			&:before {
+				-webkit-animation: shine .75s;
+				animation: shine .75s;
+			}
+		}
+	}
+	.p-name {
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+		a {
+			color: $color-link;
+			text-decoration: none;
+			&:hover {
+				color: $color-link-hover;
+			}
+		}
+	}
+	.p-price {
+		line-height: 1;
+		.money {
+			font-size: 16px;
+		}
+		.compare-price, .special-price {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.compare-price {
+			.money {
+				color: #888;
+				text-decoration: line-through;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
 	}
 }

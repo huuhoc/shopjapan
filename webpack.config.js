@@ -9,13 +9,13 @@ let config = {
   mode: 'development',
   entry: {
     main: [
-      './_dev/js/main.js',
-      './_dev/css/theme.scss'
+      './_dev/js/theme.js',
+      './_dev/css/theme.scss',
     ]
   },
   output: {
     path: path.resolve(__dirname, 'assets'),
-    filename: 'main.js'
+    filename: 'theme.js',
   },
   module: {
     rules: [
@@ -60,11 +60,6 @@ let config = {
       }
     ]
   },
-  externals: {
-    //prestashop: 'prestashop',
-    $: '$',
-    jquery: 'jQuery'
-  },
   plugins: [
     new MiniCssExtractPlugin({
         filename: 'theme.css',
@@ -75,7 +70,7 @@ let config = {
         // browse to http://localhost:3000/ during development
         host: 'localhost',
         port: 3000,
-        files: ['./*.html', './css/*.css'],
+        files: ['./*.html', './css/*.css', './js/*.js'],
         server: { baseDir: ['./'] }
       },
       // plugin options
@@ -107,5 +102,4 @@ if (process.env.NODE_ENV === 'production') {
     })
   );
 }
-
 module.exports = config;

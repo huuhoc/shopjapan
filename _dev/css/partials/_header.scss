@@ -3,13 +3,16 @@
 	box-shadow: 0 0 4px rgba(34,34,34,0.2);
 	margin-bottom: 10px;
 }
-.b-header__logo--link {
-  max-width: 150px;
-  display: inline-block;
-}
-.b-header__sologan {
-  font-size: $font-size-body;
-  margin-left: 10px;
+
+.b-header {
+	&__logo--link {
+	  max-width: 150px;
+	  display: inline-block;
+	}
+	&__sologan {
+	  font-size: 1.3rem;
+	  margin-left: 10px;
+	}
 }
 
 .b-header-menu__list {
