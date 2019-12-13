@@ -73,8 +73,11 @@
 		border-radius: 0 20px 20px 0;
 		padding: 0 15px;
 		background: transparent;
-		font-size: 16px;
+		font-size: 0;
 		color: $color-default;
+		i {
+			font-size: 16px;
+		}
 		&:hover {
 			color: $color-default;
 		}
