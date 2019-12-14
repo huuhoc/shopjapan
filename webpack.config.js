@@ -69,7 +69,7 @@ let config = {
       {
         // browse to http://localhost:3000/ during development
         host: 'localhost',
-        port: 3000,
+        port: 8080,
         files: ['./*.html', './css/*.css', './js/*.js'],
         server: { baseDir: ['./'] }
       },
