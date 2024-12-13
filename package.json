@@ -18,7 +18,7 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^3.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-rc.2",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
